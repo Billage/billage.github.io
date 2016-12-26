@@ -93,7 +93,7 @@ article ul li {background:#000;float: left;position: relative;overflow: hidden;t
 
 #footer_wrap {overflow: hidden;background: #000;}
 footer {width: 100%;padding: 10px 0;margin: auto;font-family: '나눔고딕';}
-.bnb {margin: auto;width: 30%;position: relative;overflow: hidden;font-size: 0.7em;text-align: center;}
+.bnb {margin: auto;width: 25%;position: relative;overflow: hidden;font-size: 0.7em;text-align: center;}
 .bnb a {color: #fff;}
 .bnb li {float: left;padding-left: 10px;background: url(../images/b_bar.gif) no-repeat 5px;}
 .bnb li:first-child {background: none;padding-left: 0;}
