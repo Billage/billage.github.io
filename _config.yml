@@ -17,12 +17,12 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
-  email:northwood89@gmail.com
-  facebook:https://www.facebook.com/northwood89
+  dribbble  :
+  email: northwood89@gmail.com
+  facebook: https://www.facebook.com/northwood89
   flickr:
   github: billage/jekyll-now
-  instagram:village_hotel
+  instagram: village_hotel
   linkedin:
   pinterest:
   rss: # just type anything here for a working RSS icon
