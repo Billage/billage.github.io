@@ -1,0 +1,34 @@
+@charset "utf-8";
+#visual {width: 100%;position: relative;margin: auto;padding-top: 58px;}
+#visual h2 {position: absolute;top: -9999px;left: -9999px;}
+#visual img {width: 100%;}
+
+.swiper-button-prev {font-size: 0;line-height: 0;}
+.swiper-button-next {font-size: 0;line-height: 0;}
+
+main {margin: auto;width: 90%;padding: 3% 0;overflow: hidden;}
+main h2 {font-size: 1.5em;color: gray;padding-bottom: 1%;}
+main h3 {position: absolute;left: -9999px;top: -9999px;}
+.section1 {width: 100%;margin: auto;}
+article {padding: 2% 0;overflow: hidden;}
+article ul li {background:#000;float: left;position: relative;overflow: hidden;text-align: center;}
+.link {padding: 5px;font-size: 0.8em; display: block;width: 100px;margin: auto;color: #fff;background: #ccc;font-weight: bold;}
+.recommend .link {font-size: 0.6em; }
+.link:hover {background: orange;}
+.steak,.pizza,.starter,.pasta {width: 25%;float: left;position: relative;overflow: hidden;text-align: center}
+.recommend li .name {font-size: 0.8em}
+.event li {width: 50%;}
+.membership_intr {padding-top: 3%}
+.rwd {width: 70%;}
+.bnf {width: 30%;}
+.locate {width: 30%;}
+.mfg_intro {width: 70%;}
+.zoom {display: block;transition: all 0.5s;transform:translate(0px,0px) scale(1,1);line-height: 0;font-size: 0;}
+.con_img {line-height: 0;font-size: 0;}
+.con_img img {width: 100%;line-height: 0;font-size: 0;opacity: 0.8}
+.inner {position: absolute;top: 40%;width: 100%;}
+.name {text-align: center;font-weight: bold;font-size: 1em;color: #fff;padding-bottom: 10px;display: block;word-break: break-all;}
+
+@media screen and (max-width:1025px){
+	#visual {padding-top: 44px;}
+}

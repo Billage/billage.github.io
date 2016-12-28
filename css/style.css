@@ -5,7 +5,7 @@ html,body {height:100%;background: url(../images/recommend_bg.jpg);}
 div,h1,h2,h3,h4,p,ul,li,dl,dt,dd,body,form,legend,fieldset,button,dl,dt,dd {margin: 0;padding: 0;}
 fieldset,img,button {border: 0;}
 dl,ul,li {list-style-type: none;}
-body {font-family: Open Sans,'돋움' ;font-size: 1em;}
+body,h1,h2,h3,h4 {font-family: Open Sans,'돋움' ;font-size: 1em;}
 a {text-decoration: none;color: #222}
 address {font-style: normal;font-weight: normal;}
 input,select,textarea,button{vertical-align:middle}
@@ -13,7 +13,7 @@ header,main,article,section,footer {display: block;}
 
 /*header*/
 #header_wrap {width: 100%;background: #000;}
-header {width: 100%;margin: auto;position: fixed;z-index: 100;background: #000;}
+header {width: 100%;position: fixed;z-index: 100;background: #000;}
 header h1 {width: 212px;padding: 10px;margin-left: 30px;float: left;}
 header h1 img {width: 100%;}
 header h2 {position: absolute;left: -9999px;top: -9999px;}
@@ -21,13 +21,12 @@ header h2 {position: absolute;left: -9999px;top: -9999px;}
 .toggle.on {background: url(../images/close1.png) no-repeat center center;-webkit-background-size: contain;
 background-size: contain;}
 header a {display: block;}
-#header_wrap:before,#header_wrap:after {display:block;clear:both;content:'';}
-#visual:before,#visual:after {display:block;clear:both;content:'';}
+
 
 .gnb {width: 70%;left: 30%;top: 30px;position: absolute;}
 .gnb li {float: left;margin-right: 8%;position: relative;}
 .gnb li:last-child{margin-right:0;}
-.gnb>li>a {background-size:contain;padding-bottom: 12px;}
+.gnb>li>a {background-size:contain;padding-bottom: 9px;}
 .menu {width: 55px;}
 .menu>a {background: url(../images/menu.png) no-repeat;text-indent: -9999px;}
 .rewards {width: 85px;}
@@ -44,6 +43,7 @@ header a {display: block;}
 .hover {background: orange;}
 .m_gnb_wrap {display: none;width: 250px;transition-duration: .3s;text-align: center;position: fixed;right: -300px;bottom:0;top:0;background: rgba(50,50,50,1);}
 .m_gnb a {color: #fff}
+.m_gnb a:active {color:orange;}
 .m_gnb {position: absolute;top: 30px;width: 250px;right: 0;}
 .m_gnb_wrap.on {display: block;transform: translate(-300px, 0);}
 .m_gnb>li {border-top: 1px solid #ccc;line-height: 50px;}
@@ -60,54 +60,24 @@ header a {display: block;}
 .top2 a {background: url(../images/join.png) no-repeat;}
 
 
-#visual {width: 100%;position: relative;margin: auto;}
-#visual h2 {position: absolute;top: -9999px;left: -9999px;}
-#visual img {width: 100%;}
-
-.swiper-button-prev {font-size: 0;line-height: 0;}
-.swiper-button-next {font-size: 0;line-height: 0;}
-
-main {margin: auto;width: 90%;padding: 3% 0;overflow: hidden;}
-main h2 {font-size: 1.5em;color: gray;padding-bottom: 1%;}
-main h3 {position: absolute;left: -9999px;top: -9999px;}
-.section1 {width: 100%;margin: auto;}
-article {padding: 2% 0;overflow: hidden;}
-article ul li {background:#000;float: left;position: relative;overflow: hidden;text-align: center;}
-.link {padding: 5px;font-size: 0.8em; display: block;width: 100px;margin: auto;color: #fff;background: #ccc;font-weight: bold;}
-.recommend .link {font-size: 0.6em; }
-.link:hover {background: orange;}
-.steak,.pizza,.starter,.pasta {width: 25%;float: left;position: relative;overflow: hidden;text-align: center}
-.recommend li .name {font-size: 0.8em}
-.event li {width: 50%;}
-.membership_intr {padding-top: 3%}
-.rwd {width: 70%;}
-.bnf {width: 30%;}
-.locate {width: 30%;}
-.mfg_intro {width: 70%;}
-.zoom {display: block;transition: all 0.5s;transform:translate(0px,0px) scale(1,1);line-height: 0;font-size: 0;}
-.con_img {line-height: 0;font-size: 0;}
-.con_img img {width: 100%;line-height: 0;font-size: 0;opacity: 0.8}
-.inner {position: absolute;top: 40%;width: 100%;}
-.name {text-align: center;font-weight: bold;font-size: 1em;color: #fff;padding-bottom: 10px;display: block;word-break: break-all;}
 
 
 #footer_wrap {overflow: hidden;background: #000;}
-footer {width: 100%;padding: 10px 0;margin: auto;font-family: '나눔고딕';}
-.bnb {margin: auto;width: 25%;position: relative;overflow: hidden;font-size: 0.7em;text-align: center;}
+footer {padding: 10px 0;margin: auto;font-family: '나눔고딕';}
+.bnb {margin: auto;width: 350px;position: relative;overflow: hidden;font-size: 0.7em;text-align: center;}
 .bnb a {color: #fff;}
 .bnb li {float: left;padding-left: 10px;background: url(../images/b_bar.gif) no-repeat 5px;}
 .bnb li:first-child {background: none;padding-left: 0;}
 #orange a {color: orange}
 .address {color: #fff; opacity: 0.6;width: 90%;margin: auto;padding-top: 15px;text-align: center;font-size: 0.7em}
-@media screen and (max-width:1023px){
+@media screen and (max-width:1024px){
 	.m_gnb_wrap {display: block;}
-	header {width: 100%;}
 	header h1 {width: 180px;padding: 5px 0;margin-left: 10px;}
 	.toggle {display: block;}
 	.gnb {display: none;}
 	.top {display: none;}
 	.bnb{width: 310px;font-size: 0.6em;}
-}
+	}
 
 @media screen and (max-width:768px){
 	.recommend li {width: 50%;}
@@ -115,5 +85,5 @@ footer {width: 100%;padding: 10px 0;margin: auto;font-family: '나눔고딕';}
 	.address {padding-top: 10px;}
 	.m_gnb>li {border-top: 1px solid #ccc;line-height: 40px;}
 	.swiper-button-next, .swiper-button-prev {top: 65%;}
-
+	
 }
