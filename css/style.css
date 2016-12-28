@@ -5,7 +5,7 @@ html,body {height:100%;background: url(../images/recommend_bg.jpg);}
 div,h1,h2,h3,h4,p,ul,li,dl,dt,dd,body,form,legend,fieldset,button,dl,dt,dd {margin: 0;padding: 0;}
 fieldset,img,button {border: 0;}
 dl,ul,li {list-style-type: none;}
-body,h1,h2,h3,h4 {font-family: Open Sans,'돋움' ;font-size: 1em;}
+body,h1,h2,h3,h4 {font-family: 'Open Sans','돋움' ;font-size: 1em;}
 a {text-decoration: none;color: #222}
 address {font-style: normal;font-weight: normal;}
 input,select,textarea,button{vertical-align:middle}
