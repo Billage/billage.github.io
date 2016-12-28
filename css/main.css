@@ -32,3 +32,12 @@ article ul li {background:#000;float: left;position: relative;overflow: hidden;t
 @media screen and (max-width:1025px){
 	#visual {padding-top: 44px;}
 }
+
+@media screen and (max-width:768px){
+	.recommend li {width: 50%;}
+	.event li {width: 100%;}
+	.address {padding-top: 10px;}
+	.m_gnb>li {border-top: 1px solid #ccc;line-height: 40px;}
+	.swiper-button-next, .swiper-button-prev {top: 65%;}
+	
+}
