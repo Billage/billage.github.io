@@ -26,7 +26,7 @@ header a {display: block;}
 .gnb {width: 70%;left: 30%;top: 30px;position: absolute;}
 .gnb li {float: left;margin-right: 8%;position: relative;}
 .gnb li:last-child{margin-right:0;}
-.gnb>li>a {background-size:contain;padding-bottom: 9px;}
+.gnb>li>a {background-size:contain;padding-bottom: 7px;}
 .menu {width: 55px;}
 .menu>a {background: url(../images/menu.png) no-repeat;text-indent: -9999px;}
 .rewards {width: 85px;}
@@ -78,12 +78,3 @@ footer {padding: 10px 0;margin: auto;font-family: '나눔고딕';}
 	.top {display: none;}
 	.bnb{width: 310px;font-size: 0.6em;}
 	}
-
-@media screen and (max-width:768px){
-	.recommend li {width: 50%;}
-	.event li {width: 100%;}
-	.address {padding-top: 10px;}
-	.m_gnb>li {border-top: 1px solid #ccc;line-height: 40px;}
-	.swiper-button-next, .swiper-button-prev {top: 65%;}
-	
-}
