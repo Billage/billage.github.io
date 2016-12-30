@@ -9,7 +9,8 @@
 	<style type="text/css">
 		.map {width: 400px;height: 400px;}
 	</style>
-	<script src="//apis.daum.net/maps/maps3.js?apikey=f786af073119437ef0b8660141e4d4bf"></script>
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=G_9dIO7sVBlQytiUtTcL"></script>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/modernizr-custom.js"></script>
 	<script type="text/javascript" src="js/effect.js"></script>
@@ -22,20 +23,14 @@
 					
 				</li>
 				<script>
-		var 	mapContainer = document.getElementsByClassName('map'),
-				mapOption = {
-		        center: new daum.maps.LatLng(37.56162, 126.97458), // 지도의 중심좌표
-		        level: 3, // 지도의 확대 레벨
-		        mapTypeId : daum.maps.MapTypeId.ROADMAP // 지도종류
-		    }; 
+		var map = new naver.maps.Map(document.getElementsByClassName('map'),{
+    center: new naver.maps.LatLng(37.4998161, 127.0321638),
+    zoom: 10});
 
-		// 지도를 생성한다 
-		var map = new daum.maps.Map(mapContainer, mapOption); 
-		// 지도에 마커를 생성하고 표시한다
-		var marker = new daum.maps.Marker({
-		    position: new daum.maps.LatLng(37.4998161, 127.0321638), // 마커의 좌표
-		    map: map // 마커를 표시할 지도 객체
-		    });
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.4998161, 127.0321638),
+    map: map
+});
 	</script>
 				<li></li>
 				<li></li>
