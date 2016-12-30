@@ -1,3 +1,49 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>매드포갈릭 매장안내</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/search.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<style type="text/css">
+		#map {width: 400px;height: 400px;}
+	</style>
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=G_9dIO7sVBlQytiUtTcL"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr-custom.js"></script>
+	<script type="text/javascript" src="js/effect.js"></script>
+</head>
+<body>
+	<main>
+		<article class="search">
+			<ul id="map">
+				<li class="map">
+					
+				</li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</article>
+		<script type="text/javascript">
+		var mapDiv = document.getElementsByClassName('map');
+		var map = new naver.maps.Map('map', {
+    center: new naver.maps.LatLng(37.3595704, 127.105399),
+    zoom: 10
+});
+
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.3595704, 127.105399),
+    map: map
+});
+	</script>
+	</main>
+</body>
+=======
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -37,4 +83,5 @@
 	</script>
 	</main>
 </body>
+>>>>>>> origin/master
 </html>
