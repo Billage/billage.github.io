@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<title>매드포갈릭 매장안내</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/search.css">
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<style type="text/css">
-		.map {width: 400px;height: 400px;}
+		#map {width: 400px;height: 400px;}
 	</style>
 	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=G_9dIO7sVBlQytiUtTcL"></script>
 
@@ -23,15 +23,15 @@
 					
 				</li>
 				<script>
-		var map = new naver.maps.Map(document.getElementsByClassName('map'),{
-    center: new naver.maps.LatLng(37.4998161, 127.0321638),
-    zoom: 10});
+					var map = new naver.maps.Map(document.getElementById('map'),{
+					    center: new naver.maps.LatLng(37.4998161, 127.0321638),
+					    zoom: 10});
 
-var marker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.4998161, 127.0321638),
-    map: map
-});
-	</script>
+					var marker = new naver.maps.Marker({
+					    position: new naver.maps.LatLng(37.4998161, 127.0321638),
+					    map: map
+					});
+				</script>
 				<li></li>
 				<li></li>
 				<li></li>
