@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* Reset CSS :작성한 파일 있으면 대체 가능 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding:0;margin:0}
+a{text-decoration:none}
+table{border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight:normal;font-style:normal}
+strong{font-weight:bold}
+ol,ul,li{list-style:none;margin:0;padding:0}
+caption,th{text-align:left}
+h1,h2,h3{font-weight:normal;font-size:100%;color:#444}
+
+/* Custom CSS */
+body{font-family:'Open Sans',"돋움",,arial;color:#333;color:rgba(0,0,0,0.5)}
+.wrap{margin-left:auto;margin-right:auto;width:960px;position:relative}
+h1{font-size:3em}
+h2{font-size:2em}
+p{font-size:1em}
+.intro p{width:50%;margin:0 auto;font-size:1em;text-align: left;line-height: 1.5em;}
+.intro li{width:50%;margin:0 auto;font-size:1.5em}
+.section{text-align:center}
+#menu li{display:inline-block;margin:10px;color:#000;background:#fff;	background:rgba(255,255,255, 0.5);border-radius:10px}
+#menu li.active{background:#666;background:rgba(0,0,0, 0.5);color:#fff}
+#menu li a{text-decoration:none;color:#000}
+#menu li.active a:hover{color:#000}
+#menu li:hover{background:rgba(255,255,255, 0.8)}
+#menu li a,#menu li.active a{padding:9px 18px;display:block}
+#menu li.active a{color:#fff}
+#menu{position:fixed;top:0;left:0;height:40px;z-index:70;width:100%;padding:0;margin:0}
+.box {width: 80%;margin: auto;overflow: hidden;padding-top: ;}
+.animate {animation-duration: 2s;animation-name: drop;animation-iteration-count: infinite;animation-direction: alternate}
+.animate h1 {padding-bottom: 3%;}
+.fade {position: absolute;left: 40%;width: 20%;top: 5%;animation-duration: 3s;animation: fade 2s infinite alternate;}
+.text1 {display: block;padding: 100px 0 20px 0;font-weight: bold}
+@keyframes drop {
+	0%{transform: translate(0, 0);}
+	100%{transform: translate(0,-50px)}
+}
+@keyframes fade {
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;	
+	}
+}
+.bold {display: inline-block;width: 70px;font-weight: bold;margin-left: 3%;}
+#section0 img{width: 100%;}
+#section3 img{bottom:0px;position:absolute;margin-left:-420px}
+#section0 {background: url(../images/sec0.png);}
+#section1 {background: url(../images/sec1.png);}
+#section2 {background: url(../images/sec2.png);}
+#section2 img {width: 40%;float: left;margin-right: 10px;}
+#section2 p {padding: 2%;}
+.bars {margin: auto;width: 300px;text-align: left;}
+#section3 ul{position:relative;width:700px;margin:auto}
+.web{width:563px !important;height:454px;background:url(../images/imac.png) no-repeat;position:absolute;left:0;top:0;-webkit-background-size: cover;
+background-size: cover}
+.web a{display:block;width:517px;height:291px;position:absolute;left:23px;top:23px;text-indent:-9999px;background:url(../images/web.jpg) no-repeat}
+.tablet{width:270px !important;height:350px;background:url(../images/tablet.png) no-repeat;position:absolute;left:-100px;top:160px;-webkit-background-size: cover;
+background-size: cover}
+.tablet a{display:block;width:216px;height:289px;position:absolute;left:27px;top:32px;text-indent:-9999px;background:url(../images/tablet1.png) no-repeat;-webkit-background-size: cover;
+background-size: cover;}
+.mobile{width:150px !important;height:307px;background:url(../images/iphone.png) no-repeat;position:absolute;left:520px;top:200px;-webkit-background-size: cover;
+background-size: cover;}
+.mobile a{display:block;width:138px;height:245px;position:absolute;left:7px;top:31px;text-indent:-9999px;background:url(../images/mobile.jpg) no-repeat}
+#section3 h2{margin-top:100px}
+@media screen and (max-width:1024px){
+	.fade {top: 20%;}
+}
